@@ -1,0 +1,55 @@
+<!----------------------------------------
+    CAMBIAR_CONTRA
+-->
+
+<!----------------------------------------
+    LOADS
+-->
+
+{% load static %}
+{% include 'head.html' %}
+{% include 'header.html' %}
+
+
+<!----------------------------------------
+    MAIN
+-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="col-12 col-sm-12 fs-4 fw-bolder text-center moneda_texto" style="color: black;">
+    <form action={% url "cambiar_contra" %} method="POST">
+        {% csrf_token %}
+    
+        {{form}}
+        <br>
+        <input type="submit" class="earn-buscar nav-link active fs-5 fw-bold" value="Cambiar" style="color: #67AEDB" >
+    </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!----------------------------------------
+    INCLUDE FOOTER
+-->
+
+{% include 'footer.html' %}
+    
